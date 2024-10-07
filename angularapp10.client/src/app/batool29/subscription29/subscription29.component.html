@@ -1,0 +1,17 @@
+<div class="card" style="width: 18rem;" *ngFor="let item of array">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{item.subscriptionName}}</h5>
+    <p class="card-text">{{item.subscriptionDescription}}</p>
+    <!--<input type="number"   value="{{item.subscriptionAmount}}" [(ngModel)]="data.subscriptionId"/>-->
+
+    <button   (click)="addData(item.subscribtionId)">subscribe</button>
+
+
+
+  </div>
+</div>
+
+{{name}}
+
+<input type="text"   [(ngModel)]="name" />

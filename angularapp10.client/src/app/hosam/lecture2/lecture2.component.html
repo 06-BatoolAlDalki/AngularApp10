@@ -1,0 +1,87 @@
+<p>lecture2 works!</p>
+
+
+<h1> {{20  | currency}}</h1>
+
+<h2>{{email}}</h2>
+
+
+
+<p *ngIf="num12 < 10">hello world !</p>
+
+<div *ngFor="let item of fruits">
+  <h2>{{item}}</h2>
+
+</div>
+
+<div [ngSwitch]="color">
+
+
+  <p  *ngSwitchCase="'red'">color is red</p>
+  <p *ngSwitchCase="'red'">color is pink</p>
+  <p *ngSwitchCase ="'blue'">color is blue</p>
+  <p *ngSwitchDefault>color is Default</p>
+  <p *ngSwitchDefault>color is Default2</p>
+</div>
+
+
+{{name1}}
+
+
+
+<!--Proerty Binding-->
+
+<img [src]="image1" width="150" height="150" />
+
+
+<button (click)="changeName()">click</button>
+
+
+<input value="{{name1}}"   [(ngModel)]="name1" />
+
+
+
+
+<hr />
+<h1  [ngStyle]=" {'background-color' : userObj.color } "> {{userObj.name}}</h1>
+
+
+
+<hr />
+<h2   [ngStyle]='{  color : "red"}'  >   Orange Coding Academy</h2>
+
+
+<div  *ngFor="let item of usersArray"  [ngClass]="{ 'greenColor' :   item.grade > 15 , 'redColor' : item.grade <= 15 }" >
+
+  <p>{{item.name}}</p>
+  <p>{{item.grade}}</p>
+  <p>{{item.food}}</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<img src="{{urlImg}}"  width="100" height="100" />
+
+
+<button (click)="onchange()">change</button>
+
+
+<input type="number" value="{{num}}"  [(ngModel)]="num" />
+{{name}}
+
+
+{{num}}-->

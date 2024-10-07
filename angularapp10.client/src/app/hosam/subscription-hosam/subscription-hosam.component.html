@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;" *ngFor="let item of subscriptionArray">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{item.subscriptionName}}</h5>
+    <h5 class="card-title">{{item.subscriptionDescription}}</h5>
+    <h5 class="card-title">{{item.subscriptionAmount}}</h5>
+    <a href="#" class="btn btn-primary"   (click)="addUserSubscription(item.subscribtionId)" >Subscribe Now</a>
+  </div>
+</div>
